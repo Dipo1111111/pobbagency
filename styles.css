@@ -1,0 +1,377 @@
+body {
+    font-family: 'Poppins', sans-serif !important; /* Apply Poppins font with !important to override defaults */
+}
+
+.hero.is-gradient {
+
+    background-color: white;
+}
+
+.hero-logo {
+    position: absolute;
+    
+    right: 50%;
+    transform: translateX(-230%);
+}
+
+
+.hero-content .title {
+    margin-bottom: 1rem;
+    line-height: 1.2; /* Adjust line height for better spacing */
+    color: black;
+}
+
+.hero-content .subtitle {
+    margin-bottom: 1.5rem;
+    line-height: 1.4; /* Adjust line height for better spacing */
+    color: black;
+}
+
+.cta-button {
+    margin-top: 1rem;
+}
+
+
+.hero-content {
+    position: absolute;
+    left: 2rem;
+    top: 60%;
+    transform: translateY(-60%);
+    max-width: 6000px;
+    text-align: left;
+    margin-left: 250px;
+    color: black;
+
+}
+
+
+
+.hero-content .title {
+    font-size: 3rem; /* Increase font size for the main title */
+    margin-bottom: 1rem;
+    line-height: 1.2; /* Adjust line height for better spacing */
+    margin-top: 170px;
+}
+
+.hero-content .subtitle {
+    font-size: 1.2rem; /* Increase font size for the subtitle */
+    margin-bottom: 1.5rem;
+    line-height: 1.4; /* Adjust line height for better spacing */
+}
+
+.hero-content p {
+    color: black;
+}
+
+
+.cta-button {
+    margin-top: 1rem;
+}
+
+
+
+/* Media Queries */
+
+/* For small screens like phones */
+@media screen and (max-width: 768px) {
+    .hero-content {
+        position: static; /* Reset position for better responsiveness */
+        margin-left: 1rem; /* Reset margin */
+        text-align: left; /* Center text */
+        margin-top: -3.5rem;
+        transform: none; /* Remove transform */
+        
+    }
+
+    .hero-content .title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero-content .subtitle {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero-logo {
+        right: 50%;
+        transform: translateX(50%); /* Center the logo on smaller screens */
+    }
+
+    .hero-illustration {
+        position: static; /* Make the image come under the content */
+        margin: 35rem -20rem; /* Center it horizontally */
+
+        left: 100%;
+        width: 200%;
+
+        text-align: center; /* Center align for image */
+    }
+
+    .hero-illustration img {
+        width: 1000%; /* Adjust width for smaller screens */
+        
+        
+    }
+}
+
+/* For tablets in portrait mode */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    .hero-logo {
+        left: 1rem; /* Align logo to the right for tablets */
+        transform: none; /* Remove transform */
+    }
+
+    .hero-content {
+        position: static; /* Reset position for better responsiveness */
+        margin-left: 1rem; /* Reset margin */
+        text-align: left; /* Center text */
+        margin-top: 2rem; /* Adjust margin top */
+        transform: none; /* Remove transform */
+    }
+
+    .hero-content .title {
+        font-size: 2rem; /* Adjust font size for portrait tablets */
+    }
+
+    .hero-content .subtitle {
+        font-size: 1rem; /* Adjust font size for portrait tablets */
+    }
+
+    .cta-button {
+        font-size: 1.25rem; /* Adjust font size for the button */
+        padding: 1rem 2rem; /* Adjust padding for the button */
+        border-radius: 5px; /* Adjust border radius if needed */
+    }
+
+    .hero-illustration {
+        position: static; /* Make the image come under the content */
+        margin: 1rem auto; /* Center it horizontally */
+        width: 70%; /* Adjust width for portrait tablets */
+        text-align: center; /* Center align for image */
+    }
+
+    .hero-illustration img {
+        width: 100%; /* Full width for tablets in portrait mode */
+    }
+}
+
+/* For tablets in landscape mode and larger screens */
+@media screen and (min-width: 769px) and (orientation: landscape), screen and (min-width: 1025px) {
+    .hero-logo {
+        left: 1rem; /* Align logo to the right for larger screens */
+        transform: none; /* Remove transform */
+    }
+
+    .hero-content {
+        position: absolute;
+        left: 2rem;
+        top: 40%;
+        transform: translateY(-50%);
+        margin-left: 250px; /* Adjust margin for larger screens */
+        text-align: left; /* Align text to the left */
+    }
+
+    .hero-content .title {
+        font-size: 2.5rem; /* Adjust font size for medium-sized screens like Surface Pro 7 */
+    }
+
+    .hero-content .subtitle {
+        font-size: 1.2rem; /* Adjust font size for medium-sized screens */
+    }
+
+    .cta-button {
+        font-size: 1.5rem; /* Increase font size for the button */
+        padding: 1.25rem 2.5rem; /* Adjust padding for the button */
+        border-radius: 5px; /* Adjust border radius if needed */
+    }
+
+    .hero-illustration {
+        position: absolute; /* Make the image appear on the right for landscape devices */
+        right: 0;
+        margin-right: 2rem;
+        bottom: 0;
+        top: 17%;
+        width: 21%; /* Adjust width as needed */
+        max-width: 4000px; /* Set a max width for the illustration */
+    }
+
+    .hero-illustration img {
+        width: 500px; /* Ensure the image scales properly */
+        height: auto;
+    }
+}
+
+/* end of media querries */
+
+
+.button.is-primary {
+    background-color: black; /* Your desired background color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    font-size: 20px;
+}
+
+.button.is-primary:hover {
+    background-color: white; /* Darker shade for hover effect */
+    transition-delay: 0.1s;
+    color: black; /* Ensure text color remains white on hover */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.hero-illustration {
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    bottom: 0;
+    top: 17%;
+    width: 21%; /* Adjust width as needed */
+    max-width: 4000px; /* Set a max width for the illustration */
+}
+
+.hero-illustration img {
+    width: 500px; /* Make sure the image scales properly */
+    height: auto;
+}
+
+/* What We Offer Section Styles */
+.what-we-offer {
+    background-color: #f5f5f5; /* Light background color for contrast */
+    padding: 3rem 1rem; /* Adjust padding for section */
+}
+
+.what-we-offer .title {
+    margin-bottom: 2rem; /* Space between title and cards */
+}
+
+.what-we-offer h2 {
+    color: black;
+}
+
+.service-card {
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.service-title {
+    font-size: 1.5rem; /* Adjust font size for service titles */
+    margin-top: 1rem; /* Space above title */
+}
+
+.service-card .icon {
+    color: #dc143c; /* Crimson Red color for icons */
+    margin-bottom: 1rem; /* Space below icon */
+}
+
+.section {
+    padding: 3rem 1.5rem;
+    background-color: #f5f5f5;
+}
+
+.box {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: black;
+}
+/* Team Member Card Styles */
+.card {
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    color: white;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.media-content p {
+    margin: 0;
+    color: white;
+}
+
+.container h2{
+    color: black;
+}
+/* Responsive Adjustments for Team Cards */
+@media screen and (max-width: 768px) {
+    .card-image img {
+        height: auto; /* Ensure images scale properly */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        margin-bottom: 1.5rem; /* Add spacing between cards */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        margin-bottom: 2rem; /* Add more spacing for larger screens */
+    }
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 1.5rem;
+}
+
+.footer a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.hero-illustration img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-illustration {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin: 1rem 0;
+        top: auto;
+    }
+
+    .hero-illustration img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-illustration {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-illustration {
+        width: 25%;
+        max-width: 400px;
+        right: 0;
+    }
+}
