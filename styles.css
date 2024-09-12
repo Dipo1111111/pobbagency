@@ -1,415 +1,449 @@
 body {
-    font-family: 'Poppins', sans-serif !important; /* Apply Poppins font with !important to override defaults */
-}
-
-.hero.is-gradient {
-
-    background-color: white;
-}
-
-.hero-logo {
-    position: absolute;
-    
-    right: 50%;
-    transform: translateX(-230%);
-}
-
-
-.hero-content .title {
-    margin-bottom: 1rem;
-    line-height: 1.2; /* Adjust line height for better spacing */
-    color: black;
-}
-
-.hero-content .subtitle {
-    margin-bottom: 1.5rem;
-    line-height: 1.4; /* Adjust line height for better spacing */
-    color: black;
-}
-
-.cta-button {
+    font-family: "Poppins", sans-serif;
+  }
+  .hero {
+    background-image: url(Metadata_Premiere_Pro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+  
+  }
+  .hero .cta-button {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    animation-delay: 0.5s;
+    padding: 0.75rem 2rem;
     margin-top: 1rem;
-}
-
-
-.hero-content {
-    position: absolute;
-    left: 2rem;
-    top: 60%;
-    transform: translateY(-60%);
-    max-width: 6000px;
-    text-align: left;
-    margin-left: 250px;
-    color: black;
-
-}
-
-
-
-.hero-content .title {
-    font-size: 3rem; /* Increase font size for the main title */
-    margin-bottom: 1rem;
-    line-height: 1.2; /* Adjust line height for better spacing */
-    margin-top: 170px;
-}
-
-.hero-content .subtitle {
-    font-size: 1.2rem; /* Increase font size for the subtitle */
-    margin-bottom: 1.5rem;
-    line-height: 1.4; /* Adjust line height for better spacing */
-}
-
-.hero-content p {
-    color: black;
-}
-
-
-.cta-button {
-    margin-top: 1rem;
-}
-
-
-
-/* Media Queries */
-
-/* For small screens like phones */
-@media screen and (max-width: 768px) {
-    .hero-content {
-        position: static; /* Reset position for better responsiveness */
-        margin-left: 1rem; /* Reset margin */
-        text-align: left; /* Center text */
-        margin-top: -3.5rem;
-        transform: none; /* Remove transform */
-        
-    }
-
-    .hero-content .title {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
-    }
-
-    .hero-content .subtitle {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-
-    .hero-logo {
-        right: 50%;
-        transform: translateX(50%); /* Center the logo on smaller screens */
-    }
-
-    .hero-illustration {
-        position: static; /* Make the image come under the content */
-        margin: 35rem -20rem; /* Center it horizontally */
-
-        left: 100%;
-        width: 200%;
-
-        text-align: center; /* Center align for image */
-    }
-
-    .hero-illustration img {
-        width: 1000%; /* Adjust width for smaller screens */
-        
-        
-    }
-}
-
-/* For tablets in portrait mode */
-@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-    .hero-logo {
-        left: 1rem; /* Align logo to the right for tablets */
-        transform: none; /* Remove transform */
-    }
-
-    .hero-content {
-        position: static; /* Reset position for better responsiveness */
-        margin-left: 1rem; /* Reset margin */
-        text-align: left; /* Center text */
-        margin-top: 2rem; /* Adjust margin top */
-        transform: none; /* Remove transform */
-    }
-
-    .hero-content .title {
-        font-size: 2rem; /* Adjust font size for portrait tablets */
-    }
-
-    .hero-content .subtitle {
-        font-size: 1rem; /* Adjust font size for portrait tablets */
-    }
-
-    .cta-button {
-        font-size: 1.25rem; /* Adjust font size for the button */
-        padding: 1rem 2rem; /* Adjust padding for the button */
-        border-radius: 5px; /* Adjust border radius if needed */
-    }
-
-    .hero-illustration {
-        position: static; /* Make the image come under the content */
-        margin: 1rem auto; /* Center it horizontally */
-        width: 70%; /* Adjust width for portrait tablets */
-        text-align: center; /* Center align for image */
-    }
-
-    .hero-illustration img {
-        width: 100%; /* Full width for tablets in portrait mode */
-    }
-}
-
-/* For tablets in landscape mode and larger screens */
-@media screen and (min-width: 769px) and (orientation: landscape), screen and (min-width: 1025px) {
-    .hero-logo {
-        left: 1rem; /* Align logo to the right for larger screens */
-        transform: none; /* Remove transform */
-    }
-
-    .hero-content {
-        position: absolute;
-        left: 2rem;
-        top: 40%;
-        transform: translateY(-50%);
-        margin-left: 250px; /* Adjust margin for larger screens */
-        text-align: left; /* Align text to the left */
-    }
-
-    .hero-content .title {
-        font-size: 2.5rem; /* Adjust font size for medium-sized screens like Surface Pro 7 */
-    }
-
-    .hero-content .subtitle {
-        font-size: 1.2rem; /* Adjust font size for medium-sized screens */
-    }
-
-    .cta-button {
-        font-size: 1.5rem; /* Increase font size for the button */
-        padding: 1.25rem 2.5rem; /* Adjust padding for the button */
-        border-radius: 5px; /* Adjust border radius if needed */
-    }
-
-    .hero-illustration {
-        position: absolute; /* Make the image appear on the right for landscape devices */
-        right: 0;
-        margin-right: 2rem;
-        bottom: 0;
-        top: 17%;
-        width: 21%; /* Adjust width as needed */
-        max-width: 4000px; /* Set a max width for the illustration */
-    }
-
-    .hero-illustration img {
-        width: 500px; /* Ensure the image scales properly */
-        height: auto;
-    }
-}
-
-/* end of media querries */
-
-
-.button.is-primary {
-    background-color: black; /* Your desired background color */
-    color: white; /* Text color */
-    border: none; /* Remove default border */
-    border-radius: 2rem;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    font-size: 20px;
-}
-
-.button.is-primary:hover {
-    background-color: white; /* Darker shade for hover effect */
-    transition-delay: 0.1s;
-    color: black; /* Ensure text color remains white on hover */
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-}
-
-.hero-illustration {
-    position: absolute;
-    right: 0;
-    margin-right: 2rem;
-    bottom: 0;
-    top: 17%;
-    width: 21%; /* Adjust width as needed */
-    max-width: 4000px; /* Set a max width for the illustration */
-}
-
-.hero-illustration img {
-    width: 500px; /* Make sure the image scales properly */
-    height: auto;
-}
-
-/* What We Offer Section Styles */
-.what-we-offer {
-    background-color: #f5f5f5; /* Light background color for contrast */
-    padding: 3rem 1rem; /* Adjust padding for section */
-}
-
-.what-we-offer .title {
-    margin-bottom: 2rem; /* Space between title and cards */
-}
-
-.what-we-offer h2 {
-    color: black;
-}
-
-.service-card {
-    border-radius: 8px; /* Rounded corners for cards */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
-}
-
-.service-card:hover {
-    transform: translateY(-5px); /* Lift card slightly on hover */
-}
-
-.service-title {
-    font-size: 1.5rem; /* Adjust font size for service titles */
-    margin-top: 1rem; /* Space above title */
-}
-
-.service-card .icon {
-    color: #dc143c; /* Crimson Red color for icons */
-    margin-bottom: 1rem; /* Space below icon */
-}
-
-.section {
+  }
+  
+  .hero .container h1 {
+      color: white;
+  } 
+  .hero .container p {
+      color: white;
+  }
+  
+  .navbar-menu .navbar-start a:hover {
+      background-color: black;
+      color: white;
+  }
+  
+  .hero .container a {
+      background-color: white;
+      color: black;
+  }
+  .hero .container a:hover {
+      background-color: black;
+      color: white;
+  }
+  
+  .button.is-primary {
+      background-color: black; /* Your desired background color */
+      color: white; /* Text color */
+      border: none; /* Remove default border */
+      border-radius: 2rem;
+      transition-delay: 0.2s;
+      transition-duration: 0.2s;
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      font-size: 20px;
+  }
+  
+  .button.is-primary:hover {
+      background-color: white; /* Darker shade for hover effect */
+      color: black; /* Ensure text color remains white on hover */
+      
+  }
+  
+  /* .services {
+      padding: 3rem 1.5rem;
+  }
+  .services .service-box {
+      background-color: #fff;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.2s ease-in-out;
+  }
+  .services .service-box:hover {
+      transform: translateY(-10px);
+  } */
+  /* What We Offer Section Styles */
+  /* .what-we-offer {
+      /* background-color: #f5f5f5; /* Light background color for contrast */
+      /* padding: 3rem 1rem; /* Adjust padding for section */
+  
+  
+  .what-we-offer .title {
+      margin-bottom: 2rem; /* Space between title and cards */
+  } */
+  
+  .what-we-offer h2 {
+      color: black;
+  } */ */
+  
+  .services {
+      padding: 3rem 1.5rem;
+  }
+  .services .service-box {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: transform 0.2s ease-in-out;
+  }
+  .services .service-box:hover {
+      transform: translateY(-10px);
+  }
+  
+  .section {
+      padding: 3rem 1.5rem;
+      background-color: #f9f9f9;
+  }
+  
+  .team-section {
+      padding: 4rem 1.5rem;
+      background-color: #f0f0f0;
+  }
+  
+  .team-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      color:black;
+      margin-bottom: 2rem;
+  }
+  
+  .team-cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  
+  .team-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem;
+      width: calc(33.333% - 2rem);
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+  }
+  
+  .team-card:hover {
+      transform: translateY(-10px);
+  }
+  
+  .team-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      object-fit: cover;
+  }
+  
+  .team-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 0.5rem;
+  }
+  
+  .team-title {
+      font-size: 1.5rem;
+      color: black;
+      margin-bottom: 1rem;
+  }
+  
+  .team-bio {
+      font-size: 1rem;
+      color: black;
+      line-height: 1.6;
+  }
+  
+  /* Responsive Team Section */
+  @media (max-width: 768px) {
+      .team-card {
+          width: 100%;
+      }
+  }
+  
+  /* Team Member Card Styles
+  .card {
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+      color: black;
+  }
+  
+  .card-image img {
+      width: 20%;
+      height: 100%;
+  }
+  
+  .card-content {
+      padding: 1.5rem;
+  }
+  
+  .media-content p {
+      margin: 0;
+      color: black;
+  }
+  
+  .container h2{
+      color: black;
+  }
+  .box {
+      padding: 1.5rem;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      color: black;
+  } */
+  .pricing-section {
+      padding: 4rem 1.5rem;
+      background-color: #f9f9f9;
+  }
+  
+  .pricing-table {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  
+  .pricing-plan {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem;
+      width: 300px;
+      transition: transform 0.2s;
+      text-align: center;
+  }
+  
+  .pricing-plan:hover {
+      transform: translateY(-10px);
+  }
+  
+  .plan-title {
+      font-weight: 600;
+      font-size: 1.5rem;
+  }
+  
+  .plan-price {
+      font-size: 2rem;
+      color: black;
+      margin: 1rem 0;
+  }
+  
+  .plan-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+  }
+  
+  .plan-features li {
+      margin-bottom: 0.75rem;
+  }
+  
+  .plan-button {
+      background-color: black;
+      color: white;
+      border-radius: 30px;
+      padding: 0.75rem 2rem;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+  }
+  
+  .plan-button:hover {
+      background-color: black;
+  }
+  
+  /* Responsive Pricing Section */
+  @media (max-width: 768px) {
+      .pricing-plan {
+          width: 100%;
+      }
+  }
+  .about-section {
+      padding: 4rem 1.5rem;
+      background-color: #f0f0f0;
+  }
+  
+  .about-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  
+  .about-text {
+      max-width: 600px;
+  }
+  
+  .about-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: black;
+  }
+  
+  .about-description {
+      font-size: 1.125rem;
+      color: black;
+      line-height: 1.75;
+      margin-top: 1rem;
+  }
+  
+  .about-image {
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+      margin-left: 2rem;
+  }
+  
+  /* Responsive About Us Section */
+  @media (max-width: 768px) {
+      .about-content {
+          flex-direction: column;
+          text-align: center;
+      }
+  
+      .about-image {
+          margin: 2rem 0 0;
+      }
+  }
+  .case-studies-section {
+      padding: 4rem 1.5rem;
+      background-color: #ffffff;
+  }
+  
+  .case-studies-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: black;
+  }
+  
+  .case-studies-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  
+  .case-study {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem;
+      width: calc(33.333% - 2rem);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+  }
+  
+  .case-study:hover {
+      transform: translateY(-10px);
+  }
+  
+  .case-study-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 1rem;
+  }
+  
+  .case-study-description {
+      color: black;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+  }
+  
+  .case-study-result {
+      font-weight: bold;
+      color: black;
+  }
+  
+  /* Responsive Case Studies Section */
+  @media (max-width: 992px) {
+      .case-study {
+          width: calc(50% - 2rem);
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .case-study {
+          width: 100%;
+      }
+  }
+  
+  .testimonials {
     padding: 3rem 1.5rem;
-    background-color: #f5f5f5;
-}
-
-.box {
-    padding: 1.5rem;
-    background: white;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    color: black;
-}
-/* Team Member Card Styles */
-.card {
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden;
-    color: white;
-}
-
-.card-image img {
-    width: 20%;
-    height: 100%;
-}
-
-.card-content {
-    padding: 1.5rem;
-}
-
-.media-content p {
-    margin: 0;
-    color: white;
-}
-
-.container h2{
-    color: black;
-}
-/* Responsive Adjustments for Team Cards */
-@media screen and (max-width: 768px) {
-    .card-image img {
-        height: auto; /* Ensure images scale properly */
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .card {
-        margin-bottom: 1.5rem; /* Add spacing between cards */
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .card {
-        margin-bottom: 2rem; /* Add more spacing for larger screens */
-    }
-}
-
-/* Contact Us Section Styling */
-.section {
-    padding: 3rem 1.5rem; /* Adjust padding for spacing */
-    color: black;
-}
-
-.title {
-    font-size: 2.5rem;
+    background-color: #f9f9f9;
+  }
+  .testimonial {
     margin-bottom: 2rem;
-    color: black; /* Ensure title color matches the theme */
-}
-
-.field {
-    margin-bottom: 1.5rem; /* Space between form fields */
-}
-
-.label {
-    color: black;
-}
-
-.input, .textarea {
-    border-radius: 0.375rem; /* Rounded corners for inputs and textareas */
-    border: 1px solid #dbdbdb; /* Light grey border */
-    padding: 0.75rem; /* Padding inside inputs and textareas */
-    font-size: 1rem; /* Font size for inputs and textareas */
-}
-
-
-.has-text-centered {
-    text-align: center; /* Center-align the title */
-}
-
-@media screen and (max-width: 768px) {
-    .title {
-        font-size: 2rem; /* Adjust title size on smaller screens */
-    }
-}
-
-
-.footer {
-    background-color: #333;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  /* Contact Us Section Styling */
+  .section {
+      padding: 3rem 1.5rem; /* Adjust padding for spacing */
+      color: black;
+  }
+  
+  .title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: black; /* Ensure title color matches the theme */
+  }
+  
+  .field {
+      margin-bottom: 1.5rem; /* Space between form fields */
+  }
+  
+  .label {
+      color: black;
+  }
+  
+  .input, .textarea {
+      border-radius: 0.375rem; /* Rounded corners for inputs and textareas */
+      border: 1px solid #dbdbdb; /* Light grey border */
+      padding: 0.75rem; /* Padding inside inputs and textareas */
+      font-size: 1rem; /* Font size for inputs and textareas */
+  }
+  
+  
+  .has-text-centered {
+      text-align: center; /* Center-align the title */
+  }
+  footer {
+    background-color: black;
     color: white;
     padding: 2rem 1.5rem;
-}
-
-.footer a {
+    text-align: center;
+  }
+  .footer-links a {
     color: white;
-    margin: 0 0.5rem;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-.hero-illustration img {
-    width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width: 768px) {
-    .hero-illustration {
-        position: static;
-        width: 100%;
-        max-width: none;
-        margin: 1rem 0;
-        top: auto;
+    margin: 0 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services .columns {
+      display: flex;
+      flex-direction: column;
     }
-
-    .hero-illustration img {
-        width: 100%;
-        height: auto;
+    .navbar-menu {
+      text-align: center;
     }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .hero-illustration {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .hero-illustration {
-        width: 25%;
-        max-width: 400px;
-        right: 0;
-    }
-}
+  }
+  

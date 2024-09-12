@@ -1,72 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> POBB-Agency | ROAS Manager</title>
-    <link rel="icon" href="POBB__3_-removebg-preview (1) (1).ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>POBB-Agency | ROAS Manager</title>
+    <link rel="icon" href="POBB__3_-removebg-preview (1) (1).ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-<!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '406846819125826');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=406846819125826&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
 </head>
-
 <body>
 
-    <!-- Hero Banner with Gradient Background -->
-    <section class="hero is-fullheight is-gradient">
-        <!-- Logo at the top of the hero banner -->
-        <div class="hero-logo">
-            <figure class="image is-1000x1000">
-                <img src="2-removebg-preview.png" alt="Logo" style="width: 230px;">
-            </figure>
-        </div>
-        <!-- ROAS Agency Text and CTA -->
-        <div class="hero-content" id="home">
-            <h1 class="title has-text-black">Boost Your ROI with POBB</h1>
-            <p class="subtitle">At POBB, we specialize in helping businesses maximize their return on ad spend (ROAS).
-                <br>Our data-driven strategies and expert team are dedicated to <br>optimizing your digital advertising
-                efforts and achieving measurable results.
-                <br>
-                <br>Whether you're a small startup or an established enterprise, <br>we tailor our services to meet your
-                unique needs. <br>Let us help you reach your business goals with precision and efficiency.
-                <br>
-                <br>Maximize your ad budget, scale your business, and <br>supercharge your sales like never before.
+    
 
-            </p>
-
-            <a href="https://calendly.com/pobbagency" class="button is-primary cta-button">Schedule a Call</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#home" >
+                <img src="2-removebg-preview.png" alt="POBB Logo"  >
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
 
-        <!-- Illustrated Image -->
-        <div class="hero-illustration">
-            <figure class="image">
-                <img src="POBB__4_-removebg-preview.png" alt="Illustrated Image">
-            </figure>
-        </div>
-
-        <!-- Hero body: main content -->
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <!-- Other content can go here -->
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#home">Home</a>
+                <a class="navbar-item" href="#services">Services</a>
+                <a class="navbar-item" href="#pricing">Pricing/Plans</a>
+                <a class="navbar-item" href="#about">About Us</a>
+                <a class="navbar-item" href="#case">Case Studies</a>
+                <a class="navbar-item" href="#contact">Contact</a>
             </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a href="https://calendly.com/pobbagency" class="button is-primary">Book a Call</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Hero Section -->
+     <section class="hero" id="home">
+        <div class="container">
+            <h1 class="title">
+                Maximize Your ROAS & Boost Your Business
+            </h1>
+            <p>Expert ad management services to optimize your ad spend and drive higher returns.</p>
+            <a href="https://calendly.com/pobbagency" class="button is-primary">Get started</a>
         </div>
     </section>
 
@@ -153,97 +137,230 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section class="section" id="about">
+    <!-- Services Section -->
+    <!-- <section class="services">
         <div class="container">
-            <h2 class="title has-text-centered">About Us</h2>
-            <div class="columns is-multiline">
-                <div class="column is-one-third">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    
-                                    <p class="title is-4">Igbojuwo Ola</p>
-                                    <p class="subtitle is-6">Founder & CEO</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                            Ola has over 1 year of experience in digital marketing and ad optimization. He leads
-                                the team with a focus on results-driven strategies.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4">Emily Shopia</p>
-                                    <p class="subtitle is-6">Account manager</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Emily is dedicated to client success, building long-term trust and partenership and delivers effective digital marketing strategies.
-
-
- 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                   
-                                    <p class="title is-4">Fatima Asif</p>
-                                    <p class="subtitle is-6">Digital Marketing Specialist</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Fatima brings expertise in digital advertising and ad managemment. She focuses on
-                                improving campaign performance and ROI.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Process Section -->
-    <section class="section" id="process">
-        <div class="container">
-            <h2 class="title has-text-centered">Our Process</h2>
+            <h2 class="title has-text-centered">Our Services</h2>
             <div class="columns">
-                <div class="column is-one-third">
-                    <div class="box">
-                        <h3 class="subtitle-black">Step 1: Analysis</h3>
-                        <p>We start with a comprehensive analysis of your current ad spend and landing page performance
-                            to identify areas for improvement.</p>
+                <div class="column">
+                    <div class="service-box">
+                        <h3 class="subtitle">ROAS Optimization</h3>
+                        <p>Maximize return on ad spend through data-driven strategies and optimizations.</p>
                     </div>
                 </div>
-                <div class="column is-one-third">
-                    <div class="box">
-                        <h3 class="subtitle-black">Step 2: Strategy</h3>
-                        <p>Based on our analysis, we develop a tailored strategy designed to maximize your ROI and
-                            minimize costs.</p>
+                <div class="column">
+                    <div class="service-box">
+                        <h3 class="subtitle">Ad Campaign Management</h3>
+                        <p>End-to-end management of paid ad campaigns across multiple platforms.</p>
                     </div>
                 </div>
-                <div class="column is-one-third">
-                    <div class="box">
-                        <h3 class="subtitle-black">Step 3: Implementation</h3>
-                        <p>We execute the strategy, making necessary adjustments to your ad campaigns and landing pages
-                            to ensure optimal performance.</p>
+                <div class="column">
+                    <div class="service-box">
+                        <h3 class="subtitle">Data Analysis & Reporting</h3>
+                        <p>Detailed reports and actionable insights to track performance and results.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section> -->
+
+    
+
+    <!-- pricing-plan -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2 class="title has-text-centered">Pricing & Plans</h2>
+            <div class="pricing-table">
+                <!-- Starter Plan -->
+                <div class="pricing-plan">
+                    <h3 class="plan-title">Starter Plan</h3>
+                    <p class="plan-price">$299/month</p>
+                    <ul class="plan-features">
+                        <li>ROAS Optimization</li>
+                        <li>Ad Campaign Setup</li>
+                        <li>Monthly Reporting</li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                </div>
+    
+                <!-- Growth Plan -->
+                <div class="pricing-plan">
+                    <h3 class="plan-title">Growth Plan</h3>
+                    <p class="plan-price">$499/month</p>
+                    <ul class="plan-features">
+                        <li>Everything in Basic</li>
+                        <li>Ad Campaign Management</li>
+                        <li>Bi-Monthly Reporting</li>
+                        <li>Up to 3 Ad Platforms</li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                </div>
+    
+                <!-- Development Plan -->
+                <div class="pricing-plan">
+                    <h3 class="plan-title">Development Plan</h3>
+                    <p class="plan-price">$999/month</p>
+                    <ul class="plan-features">
+                        <li>Everything in Standard</li>
+                        <li>Advanced Data Analysis</li>
+                        <li>Basic A/B testing for ads</li>
+                        <li>Dedicated Account Manager</li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                </div>
+    
+                <!-- Pro Plan -->
+                <div class="pricing-plan">
+                    <h3 class="plan-title">Performance Plan</h3>
+                    <p class="plan-price">$2,499/month</p>
+                    <ul class="plan-features">
+                        <li>All Development Features</li>
+                        <li>Custom Ad Strategies</li>
+                        <li>Multi-Platform Management</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                </div>
+    
+                <!-- Conversion Plan -->
+                <div class="pricing-plan">
+                    <h3 class="plan-title">Conversion Plan</h3>
+                    <p class="plan-price">$2,999/month</p>
+                    <ul class="plan-features">
+                        <li>All Performance Features</li>
+                        <li>Unlimited Ad Platforms</li>
+                        <li>Advanced Market Insights</li>
+                        <li>Landing page optimization</li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                </div>
+    
+                <!-- Elite Plan -->
+                <div class="pricing-plan">
+                    <h3 class="plan-title">Elite Plan</h3>
+                    <p class="plan-price">$5,499/month</p>
+                    <ul class="plan-features">
+                        <li>All Elite Features</li>
+                        <li>Dedicated Strategy Team</li>
+                        <li>Performance Guarantee</li>
+                        <li>Full creative services</li>
+                    </ul>
+                    <a href="#" class="plan-button">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">About POBB</h2>
+                    <p class="about-description">
+                        At POBB (Professional Online Business Bureau), we are passionate about helping businesses maximize their advertising potential and achieve outstanding ROAS (Return on Ad Spend). With years of experience in digital marketing and ad campaign management, our expert team provides data-driven solutions tailored to each client's needs.
+                        <br><br>
+                        Our mission is to deliver measurable results that allow businesses to grow and scale effectively, with transparency and continuous support at every step of the journey. We believe in a collaborative approach that focuses on understanding your unique challenges and providing actionable insights for better performance.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
     </section>
 
+    <section class="team-section">
+        <div class="container">
+            <h2 class="team-title">Meet Our Team</h2>
+            <div class="team-cards">
+                <!-- Founder Card -->
+                <div class="team-card">
+                    <h3 class="team-name">Igbojuwo Ola</h3>
+                    <p class="team-title">Founder & CEO</p>
+                    <p class="team-bio">
+                        Ola has over 5 years of experience in digital marketing and business strategy. He founded POBB with a vision to help businesses maximize their ROI through data-driven solutions.
+                    </p>
+                </div>
+    
+                <!-- Digital Marketing Specialist Card -->
+                <div class="team-card">
+                    <h3 class="team-name">Fatima Asif</h3>
+                    <p class="team-title">Digital Marketing Specialist</p>
+                    <p class="team-bio">
+                        Fatima is an expert in paid media and SEO strategies. She has helped numerous clients grow their online presence and drive traffic through tailored ad campaigns.
+                    </p>
+                </div>
+    
+                <!-- Account Manager Card -->
+                <div class="team-card">
+                    <h3 class="team-name">Emily Shopia</h3>
+                    <p class="team-title">Account Manager</p>
+                    <p class="team-bio">
+                        Emily ensures our clients receive top-tier service, managing their accounts with dedication and precision. She is passionate about building strong client relationships.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- case Studies -->
+    <section class="case-studies-section" id="case">
+        <div class="container">
+            <h2 class="case-studies-title">Our Success Stories</h2>
+            <div class="case-studies-grid">
+                <!-- Case Study 1 -->
+                <div class="case-study">
+                    <h3 class="case-study-title">E-commerce Store Growth</h3>
+                    <p class="case-study-description">
+                        Challenge: An e-commerce client struggled with a low return on ad spend due to inefficient ad targeting.
+                        <br><br>
+                        Solution: We refined their targeting strategy and optimized their ad creative to appeal to a broader audience.
+                    </p>
+                    <p class="case-study-result">Result: 4x ROAS within 3 months.</p>
+                </div>
+    
+                <!-- Case Study 2 -->
+                <div class="case-study">
+                    <h3 class="case-study-title">Health & Fitness Brand</h3>
+                    <p class="case-study-description">
+                        Challenge: A health & wellness brand was experiencing stagnant growth in online sales.
+                        <br><br>
+                        Solution: We implemented a data-driven campaign focused on social media platforms to increase engagement and sales.
+                    </p>
+                    <p class="case-study-result">Result: 200% increase in online sales.</p>
+                </div>
+    
+                <!-- Case Study 3 -->
+                <div class="case-study">
+                    <h3 class="case-study-title">Real Estate Agency</h3>
+                    <p class="case-study-description">
+                        Challenge: A real Estate agency needed to reach more customers.
+                        <br><br>
+                        Solution: We designed a highly targeted campaign to reach more buyers and sellers with tailored ads.
+                    </p>
+                    <p class="case-study-result">Result: 3.5x increase in bookings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="title has-text-centered">What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"POBB helped us double our ROAS in just 3 months! Their team is incredibly knowledgeable and professional."</p>
+                <p><strong>- Steven's DIY Store</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Our ad campaigns have never performed better. POBB delivers consistent results and top-tier service."</p>
+                <p><strong>- Rovated Fitness</strong></p>
+            </div>
+        </div>
+    </section>
 
     <!-- FAQs Section -->
     <section class="section" id="faqs">
@@ -299,34 +416,31 @@
         </div>
     </section>
 
-
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container has-text-centered">
-            <p>&copy; 2024 POBB Agency. All rights reserved.</p>
-            <p>Email at pobbagency@yahoo.com</p>
-            <div class="columns is-centered">
-                <div class="column is-narrow">
-                    <a href="#services">Services</a>
-                </div>
-                <div class="column is-narrow">
-                    <a href="#about">About Us</a>
-                </div>
-                <div class="column is-narrow">
-                    <a href="#faqs">FAQs</a>
-                </div>
-                <div class="column is-narrow">
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="column is-narrow">
-                    <a href="#home">Schedule a Call</a>
-                </div>
-            </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 POBB - All Rights Reserved</p>
+        <div class="footer-links">
+            <a href="#contact">Contact Us</a>
         </div>
     </footer>
 
+    <script>
+        // Navbar burger toggle for mobile
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
-
 </html>
