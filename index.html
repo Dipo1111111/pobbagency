@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    
-
+    <!-- Loader Section -->
+    <div id="loader">
+        <div class="spinner">
+            <i class="currency-symbol">$</i> <!-- You can replace with any symbol you like -->
+        </div>
+    </div>
     <!-- Navigation Bar -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -54,13 +58,62 @@
         </div>
     </section>
 
+
+    <section id="services" class="services-section">
+        <h2>What We Offer</h2>
+        <div class="services-container">
+            <!-- Service 1: ROI Optimization -->
+            <div class="service-card">
+                <i class="service-icon fas fa-chart-line"></i> <!-- Chart Line Icon -->
+                <h3>ROI Optimization</h3>
+                <p>Maximize your return on ad spend with data-driven strategies that enhance your profitability across multiple channels.</p>
+            </div>
+    
+            <!-- Service 2: Targeted Ad Campaigns -->
+            <div class="service-card">
+                <i class="service-icon fas fa-bullseye"></i> <!-- Bullseye Icon -->
+                <h3>Targeted Ad Campaigns</h3>
+                <p>We create customized campaigns to target your ideal audience, ensuring your ads reach the right people at the right time.</p>
+            </div>
+    
+            <!-- Service 3: Advanced Analytics -->
+            <div class="service-card">
+                <i class="service-icon fas fa-search-dollar"></i> <!-- Search Dollar Icon -->
+                <h3>Advanced Analytics</h3>
+                <p>Track and analyze every click and conversion to refine your strategy and maximize the impact of your advertising budget.</p>
+            </div>
+    
+            <!-- Service 4: Landing Page Optimization -->
+            <div class="service-card">
+                <i class="service-icon fas fa-desktop"></i> <!-- Desktop Icon -->
+                <h3>Landing Page Optimization</h3>
+                <p>Boost conversions with optimized landing pages that guide users to take action and improve their overall experience.</p>
+            </div>
+    
+            <!-- Service 5: Ad Creatives -->
+            <div class="service-card">
+                <i class="service-icon fas fa-paint-brush"></i> <!-- Paint Brush Icon -->
+                <h3>Ad Creatives</h3>
+                <p>Create visually compelling ad creatives that capture attention and drive engagement with your target audience.</p>
+            </div>
+    
+            <!-- Service 6: Email Marketing -->
+            <div class="service-card">
+                <i class="service-icon fas fa-envelope"></i> <!-- Envelope Icon -->
+                <h3>Email Marketing</h3>
+                <p>Engage with your customers directly through personalized email campaigns designed to nurture leads and drive sales.</p>
+            </div>
+        </div>
+    </section>
+    
+    
     <!-- What We Offer Section -->
-    <section class="section what-we-offer" id="services">
+    <!-- <section class="section what-we-offer" id="services">
         <div class="container">
             <h2 class="title has-text-centered">What We Offer</h2>
-            <div class="columns is-multiline is-centered">
+            <div class="columns is-multiline is-centered"> -->
                 <!-- Service 1 -->
-                <div class="column is-4">
+                <!-- <div class="column is-4">
                     <div class="card service-card">
                         <div class="card-content">
                             <div class="content has-text-centered">
@@ -70,9 +123,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- Service 2 -->
-                <div class="column is-4">
+                <!-- <div class="column is-4">
                     <div class="card service-card">
                         <div class="card-content">
                             <div class="content has-text-centered">
@@ -83,9 +136,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- Service 3 -->
-                <div class="column is-4">
+                <!-- <div class="column is-4">
                     <div class="card service-card">
                         <div class="card-content">
                             <div class="content has-text-centered">
@@ -95,10 +148,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Service 4 -->
-                <div class="column is-4">
+                <!-- <div class="column is-4">
                     <div class="card service-card">
                         <div class="card-content">
                             <div class="content has-text-centered">
@@ -107,10 +160,10 @@
                                 <p>Our data-driven strategies help you reach the right audience effectively.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
                 <!-- Service 5 -->
-                <div class="column is-4">
+                <!-- <div class="column is-4">
                     <div class="card service-card">
                         <div class="card-content">
                             <div class="content has-text-centered">
@@ -120,9 +173,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- service 6 -->
-                <div class="column is-4">
+                <!-- <div class="column is-4">
                     <div class="card service-card">
                         <div class="card-content">
                             <div class="content has-text-centered">
@@ -134,8 +187,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
 
     <!-- Services Section -->
     <!-- <section class="services">
@@ -180,7 +233,7 @@
                         <li>Ad Campaign Setup</li>
                         <li>Monthly Reporting</li>
                     </ul>
-                    <a href="#" class="plan-button">Choose Plan</a>
+                    <a href="#" class="plan-button" data-plan="Starter Plan">Choose Plan</a>
                 </div>
     
                 <!-- Growth Plan -->
@@ -193,7 +246,7 @@
                         <li>Bi-Monthly Reporting</li>
                         <li>Up to 3 Ad Platforms</li>
                     </ul>
-                    <a href="#" class="plan-button">Choose Plan</a>
+                    <a href="#" class="plan-button" data-plan="Growth Plan">Choose Plan</a>
                 </div>
     
                 <!-- Development Plan -->
@@ -206,7 +259,7 @@
                         <li>Basic A/B testing for ads</li>
                         <li>Dedicated Account Manager</li>
                     </ul>
-                    <a href="#" class="plan-button">Choose Plan</a>
+                    <a href="#" class="plan-button" data-plan="Development Plan">Choose Plan</a>
                 </div>
     
                 <!-- Pro Plan -->
@@ -219,7 +272,7 @@
                         <li>Multi-Platform Management</li>
                         <li>24/7 Support</li>
                     </ul>
-                    <a href="#" class="plan-button">Choose Plan</a>
+                    <a href="#" class="plan-button" data-plan="Performance Plan">Choose Plan</a>
                 </div>
     
                 <!-- Conversion Plan -->
@@ -232,7 +285,7 @@
                         <li>Advanced Market Insights</li>
                         <li>Landing page optimization</li>
                     </ul>
-                    <a href="#" class="plan-button">Choose Plan</a>
+                    <a href="#" class="plan-button" data-plan="Conversion Plan">Choose Plan</a>
                 </div>
     
                 <!-- Elite Plan -->
@@ -245,11 +298,42 @@
                         <li>Performance Guarantee</li>
                         <li>Full creative services</li>
                     </ul>
-                    <a href="#" class="plan-button">Choose Plan</a>
+                    <a href="#" class="plan-button" data-plan="Elite Plan">Choose Plan</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Modal Structure -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2 class="contact-form-title">Get in Touch with Us</h2>
+        <form class="contact-form" action="https://formspree.io/f/xblrwjaa" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="_replyto" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="plan">Selected Plan</label>
+                <input type="text" id="selected-plan" name="plan" readonly>
+            </div>
+            <div class="form-group">
+                <label for="business">Business Name</label>
+                <input type="text" id="business" name="business" placeholder="Enter your business name" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us more about your needs"></textarea>
+            </div>
+            <button type="submit" class="contact-submit">Submit</button>
+        </form>
+    </div>
+</div>
+
     <!-- about section -->
     <section class="about-section" id="about">
         <div class="container">
@@ -262,7 +346,7 @@
                         Our mission is to deliver measurable results that allow businesses to grow and scale effectively, with transparency and continuous support at every step of the journey. We believe in a collaborative approach that focuses on understanding your unique challenges and providing actionable insights for better performance.
                     </p>
                 </div>
-                
+                <img src="ex1-intro.png" alt="About Us" class="about-image">
             </div>
         </div>
         
@@ -353,11 +437,11 @@
             <h2 class="title has-text-centered">What Our Clients Say</h2>
             <div class="testimonial">
                 <p>"POBB helped us double our ROAS in just 3 months! Their team is incredibly knowledgeable and professional."</p>
-                <p><strong>- Steven's DIY Store</strong></p>
+                <p><strong>- Rovated Fitness</strong></p>
             </div>
             <div class="testimonial">
                 <p>"Our ad campaigns have never performed better. POBB delivers consistent results and top-tier service."</p>
-                <p><strong>- Rovated Fitness</strong></p>
+                <p><strong>- Steven's DIY Store</strong></p>
             </div>
         </div>
     </section>
@@ -442,5 +526,50 @@
             }
         });
     </script>
+    <script>
+        // Get modal element
+        var modal = document.getElementById("contactModal");
+        
+        // Get all "Choose Plan" buttons
+        var choosePlanButtons = document.querySelectorAll(".plan-button");
+        
+        // Get the <span> element that closes the modal
+        var closeModalBtn = document.querySelector(".modal-close");
+        
+        // Get the plan input in the form
+        var selectedPlanInput = document.getElementById("selected-plan");
+        
+        // Add click event to each "Choose Plan" button
+        choosePlanButtons.forEach(function(button) {
+            button.onclick = function() {
+                var selectedPlan = this.getAttribute("data-plan"); // Get the plan name
+                selectedPlanInput.value = selectedPlan; // Set it to the form input
+                modal.style.display = "block"; // Show the modal
+            }
+        });
+        
+        // Close the modal when clicking the close button
+        closeModalBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // Close the modal when clicking outside the modal content
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+        <script>// Ensure the DOM is fully loaded before hiding the loader
+            window.addEventListener('load', function() {
+                // Hide the loader
+                var loader = document.getElementById('loader');
+                loader.style.display = 'none';
+            
+                // Show the main content
+                var content = document.getElementById('main-content');
+                content.style.display = 'block';
+            });
+        </script>
 </body>
 </html>
