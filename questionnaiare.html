@@ -3,163 +3,143 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Meta Description for SEO -->
-    <meta name="description" content="POBB is a leading ROAS agency, specializing in return on ad spend optimization for e-commerce, health & wellness, Real Estate Agencies and travel businesses. We maximize your ad performance with advanced strategies.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Top ROAS Agency | Boost Your Return on Ad Spend with POBB">
-    <title>POBB-Agency | Pre questionnaire</title>
-    <link rel="icon" href="POBB__3_-removebg-preview (1) (1).ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Book Strategy Call | POBB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Calendly widget -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: -0.03em;
+        }
+        
+        .calendly-inline-widget {
+            min-height: 700px;
+        }
+    </style>
 </head>
 
-<body>
-    <!-- Loader Section -->
-    <div id="loader">
-        <div class="spinner">
-            <i class="currency-symbol">$</i>
-            <!-- You can replace with any symbol you like -->
-        </div>
-    </div>
-    <!-- Navigation Bar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="#home">
-                <img src="2-removebg-preview.png" alt="POBB Logo">
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="index.html">Home</a>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex-shrink-0">
+                    <img class="h-12" src="2-removebg-preview.png" alt="POBB Logo">
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Pre-consultation-section -->
-    <section id="pre-consultation" class="pre-consultation-section">
-        <div class="container">
-            <h2>Pre-Consultation Questionnaire</h2>
-            <p>Thank you for considering our services! Please take a moment to fill out the questionnaire below, Your responses will help us tailor the consultation to your specific needs. Then you can schedule your consultation.</p>
-            <form action="https://formspree.io/f/xqazyrea" method="POST" class="consultation-form">
-                <!-- Question 1: Business Name -->
-                <label for="business-name">What is your business name?</label>
-                <input type="text" id="business-name" name="business-name" required>
+    <!-- Main Content -->
+    <div class="pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Book Your Strategy Session</h1>
+                <p class="text-xl text-gray-600">Select your preferred time below</p>
+            </div>
 
-                <!-- Question 2: Business Industry -->
-                <label for="industry">What industry is your business in?</label>
-                <input type="text" id="industry" name="industry" required>
+            <!-- Calendly Widget -->
+            <div class="mb-16 rounded-xl shadow-lg overflow-hidden">
+                <div class="calendly-inline-widget" data-url="https://calendly.com/pobb-agency" style="width:100%;height:100%;"></div>
+            </div>
 
-                <!-- Question 3: What are your main goals? -->
-                <label for="goals">What are your main business goals right now?</label>
-                <textarea id="goals" name="goals" rows="4" required></textarea>
+            <!-- Pre-Call Questionnaire -->
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Pre-Call Questionnaire</h2>
+                <form class="space-y-8" action="https://formspree.io/f/xqazyrea" method="POST">
+                    <!-- Contact Info -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-gray-800">Basic Information</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                <input type="text" name="first_name" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                <input type="text" name="last_name" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                            </div>
+                        </div>
 
-                <!-- Question 4: What is your preferred communication method? -->
-                <label for="marketing-channels">What is your preferred communication method (email, phone calls, video calls)?</label>
-                <input type="text" id="marketing-channels" name="marketing-channels" required>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                            <input type="text" name="company" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                        </div>
 
-                <!-- Question 5: What challenges are you currently facing in your business when it comes to marketing and advertising? -->
-                <label for="goals">What challenges are you currently facing in your business when it comes to marketing and advertising?</label>
-                <textarea id="goals" name="goals" rows="4" required></textarea>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Website URL *</label>
+                            <input type="url" name="website" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                        </div>
+                    </div>
 
-                <!-- Question 6: Current Marketing Channels -->
-                <label for="marketing-channels">Which marketing type are you currently using?</label>
-                <input type="text" id="marketing-channels" name="marketing-channels" required>
+                    <!-- Business Info -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-gray-800">Business Overview</h3>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Monthly Revenue (USD) *</label>
+                            <input type="number" name="revenue" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                        </div>
 
-                <!-- Question 7: Monthly Ad Spend -->
-                <label for="ad-spend">What is your current monthly ad or marketing spend?</label>
-                <input type="text" id="ad-spend" name="ad-spend" required>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Monthly Ad Spend (USD) *</label>
+                            <select name="ad_spend" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                                <option value="">Select Range</option>
+                                <option value="1k-5k">$1,000 - $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-20k">$10,000 - $20,000</option>
+                                <option value="20k+">$20,000+</option>
+                            </select>
+                        </div>
 
-                <!-- Question 8: Expectations from Consultation -->
-                <label for="expectations">What do you hope to achieve from this consultation?</label>
-                <textarea id="expectations" name="expectations" rows="4" required></textarea>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Primary Campaign Goal *</label>
+                            <textarea name="goals" rows="4" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent" placeholder="Example: Increase ROAS from 2.5x to 4x within 3 months"></textarea>
+                        </div>
+                    </div>
 
-                <!-- Question 9: How long have you been in business? -->
-                <label for="expectations">How long have you been in business?</label>
-                <textarea id="expectations" name="expectations" rows="4" required></textarea>
-
-                <!-- Question 10: Who is involved in the decision-making process for your marketing strategy and budget? -->
-                <label for="expectations">Who is involved in the decision-making process for your marketing strategy and budget?</label>
-                <textarea id="expectations" name="expectations" rows="4" required></textarea>
-
-                <!-- Submit Button -->
-                <a href="https://calendly.com/pobb-agency">
-                    <button type="submit" class="button is-primary">Submit my questionnaire</button>
-                </a>
-
-                <h3>After submitting your questionnaire, comeback and Schedule your Consultation</h3>
-
-                <a href="https://calendly.com/pobb-agency" class="button is-primary">Schedule my consultation call</a>
-
-            </form>
-
-
-
+                    <!-- Submit Button -->
+                    <div class="pt-6">
+                        <button type="submit" class="w-full bg-black text-white py-4 rounded-lg hover:bg-gray-800 transition-colors font-medium">
+                            Submit Questionnaire
+                        </button>
+                        <p class="mt-4 text-sm text-gray-500">
+                            By submitting, you agree to our <a href="#" class="text-black underline">privacy policy</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 POBB - All Rights Reserved</p>
-        <div class="footer-links ">
-            <a href="#contact ">Contact Us</a>
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-4">&copy; 2024 POBB - All Rights Reserved</p>
+            <a href="#contact" class="text-gray-400 hover:text-white">Contact Us</a>
         </div>
     </footer>
 
+    <!-- Calendly init -->
     <script>
-        // Navbar burger toggle for mobile
-        document.addEventListener('DOMContentLoaded', () => {
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-            if ($navbarBurgers.length > 0) {
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-                    });
-                });
-            }
+        Calendly.initBadgeWidget({
+            url: 'https://calendly.com/pobb-agency',
+            text: 'Schedule time with me',
+            color: '#000000',
+            textColor: '#ffffff',
+            branding: false
         });
-    </script>
-    <script>
-        // Ensure the DOM is fully loaded before hiding the loader
-        window.addEventListener('load', function() {
-            // Hide the loader
-            var loader = document.getElementById('loader');
-            loader.style.display = 'none';
-
-            // Show the main content
-            var content = document.getElementById('main-content');
-            content.style.display = 'block';
-        });
-
-        // Function to handle fade-in effect on scroll
-        const fadeInElements = document.querySelectorAll('.fade-in');
-
-        const handleScroll = () => {
-            fadeInElements.forEach((el) => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight && rect.bottom > 0) {
-                    el.classList.add('visible');
-                }
-            });
-        };
-
-        // Attach scroll event listener
-        window.addEventListener('scroll', handleScroll);
-
-        // Trigger on load to handle elements already in view
-        handleScroll();
     </script>
 </body>
 

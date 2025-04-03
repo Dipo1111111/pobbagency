@@ -221,7 +221,7 @@ about-section {
     aspect-ratio: 4 / 3;
     /* Maintains the aspect ratio */
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 50px;
     /* Adds rounded corners */
     display: flex;
     justify-content: center;
