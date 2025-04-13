@@ -894,3 +894,49 @@ footer {
         width: 100%;
     }
 }
+
+
+/* Value Cards */
+.value-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #25D366;
+}
+
+.value-card .title.is-5 {
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.value-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .value-card {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .value-icon {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+}
+

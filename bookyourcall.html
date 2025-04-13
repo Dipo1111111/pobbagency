@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta Description for SEO -->
+    <meta name="description"
+        content="Book a free strategy call with POBB to discuss how we can maximize your ROAS and grow your business with our Edison Effect methodology.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Book a Free Strategy Call | POBB Agency">
+    <title>Book a Call | POBB Agency</title>
+    <link rel="icon" href="POBB__3_-removebg-preview (1) (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Loader Section -->
+    <div id="loader">
+        <div class="spinner">
+            <i class="currency-symbol">PB</i>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="2-removebg-preview.png" alt="POBB Logo">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="index.html#about">About Us</a>
+                <a class="navbar-item" href="index.html#services">Services</a>
+                <a class="navbar-item" href="index.html#contact">Contact</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a href="https://calendly.com/pobb-agency" class="button is-primary">Book a Call</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-medium" id="book-hero">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Let's Get Started With Your Free Strategy Session
+                </h1>
+                <p class="subtitle">
+                    Schedule a call with our ROAS experts to discuss how we can help you achieve 5+ sales at no cost
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Header Section -->
+    <section class="section fade-in-section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-two-thirds has-text-centered">
+                    <h1 class="title is-2 mb-4">Book Your Free Call Now</h1>
+                    <p class="subtitle is-5 mb-6">Select your preferred time below to claim your free strategy session
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget"
+        data-url="https://calendly.com/pobb-agency/consultation-call?back=1&month=2025-04"
+        style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
+
+    <!-- WhatsApp Fallback Section -->
+    <section class="section fade-in-section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half has-text-centered">
+                    <div class="fallback-box">
+                        <h3 class="title is-4 mb-3">Having trouble with the calendar?</h3>
+                        <p class="mb-4">DM us directly on WhatsApp and we'll schedule your call manually</p>
+                        <a href="https://wa.me/yourphonenumber" class="button is-primary whatsapp-button is-medium">
+                            <span class="icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </span>
+                            <span>Message Us on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Call Questionnaire Section -->
+    <section class="section fade-in-section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-two-thirds">
+                    <div class="form-container">
+                        <h2 class="title has-text-centered mb-5">Help Us Prepare For Your Call</h2>
+                        <p class="subtitle has-text-centered mb-6">Answer these quick questions so we can make the most
+                            of our time together</p>
+
+                        <form action="https://formspree.io/f/xqazyrea" method="POST">
+                            <!-- Hidden Field for Calendly Event -->
+                            <input type="hidden" name="_next" value="https://pobbagency.vercel.app/thankyou">
+
+                            <!-- Existing Questions... (keep previous 4 questions) -->
+                            <!-- Question 1 -->
+                            <div class="field">
+                                <label class="label">What's your biggest challenge with ads right now?</label>
+                                <div class="control">
+                                    <textarea class="textarea" name="biggest_challenge" rows="2" required></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div class="field">
+                                <label class="label">Current monthly ad spend ($USD)</label>
+                                <div class="control">
+                                    <input class="input" type="number" name="ad_spend" required>
+                                </div>
+                            </div>
+
+                            <!-- Question 3
+                            <div class="field">
+                                <label class="label">Current ROAS (Return on Ad Spend)</label>
+                                <div class="control">
+                                    <input class="input" type="number" step="0.1" name="current_roas"
+                                        placeholder="e.g., 2.5" required>
+                                </div>
+                            </div> -->
+
+                            <!-- Question 4 -->
+                            <div class="field">
+                                <label class="label">What's your #1 goal for this partnership?</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select name="primary_goal" required>
+                                            <option value="" disabled selected>Select an option</option>
+                                            <option value="increase_roas">Increase ROAS</option>
+                                            <option value="scale_profitably">Scale profitably</option>
+                                            <option value="fix_funnel">Fix conversion funnel</option>
+                                            <option value="creative_strategy">Better ad creatives</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New Question 5: Monthly Revenue -->
+                            <div class="field">
+                                <label class="label">What is your current monthly revenue from your main
+                                    business?</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select name="monthly_revenue" required>
+                                            <option value="" disabled selected>Select range</option>
+                                            <option value="under_500">Under $500</option>
+                                            <option value="1k_5k">$1K - $5K</option>
+                                            <option value="5k_10k">$5K - $10K</option>
+                                            <option value="10k_50k">$10K - $50K</option>
+                                            <option value="50k_plus">$50K+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New Question 6: Investment Capacity -->
+                            <div class="field">
+                                <label class="label">If we're a good fit, what could you invest monthly to work with
+                                    us?</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select name="investment_capacity" required>
+                                            <option value="" disabled selected>Select range</option>
+                                            <option value="under_500">Under $500</option>
+                                            <option value="1k_5k">$1K - $5K</option>
+                                            <option value="5k_10k">$5K - $10K</option>
+                                            <option value="10k_50k">$10K - $50K</option>
+                                            <option value="50k_plus">$50K+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New Question 7: Attendance Commitment -->
+                            <div class="field">
+                                <label class="label">Will you definitely attend at your scheduled time?</label>
+                                <div class="control">
+                                    <label class="radio">
+                                        <input type="radio" name="attendance_commitment" value="yes" required>
+                                        Yes, I'll be there
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="attendance_commitment" value="no">
+                                        No, I am not sure
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="field mt-6">
+                                <div class="control has-text-centered">
+                                    <button type="submit" class="button is-primary is-medium">
+                                        Submit Questionnaire
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p class="has-text-centered mt-4 is-size-7">
+                                <i class="fas fa-lock"></i> Your information is secure and will only be used to prepare
+                                for our call
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Value Proposition Section -->
+    <section class="section fade-in-section" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2 class="title has-text-centered mb-6">What You'll Get On This Call</h2>
+
+            <div class="columns is-multiline is-centered">
+                <!-- Benefit 1 -->
+                <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <span>✅</span>
+                        </div>
+                        <h3 class="title is-5">Funnel Audit</h3>
+                        <p>A personal audit of your funnel by Solomon</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <span>✅</span>
+                        </div>
+                        <h3 class="title is-5">Sales Killers</h3>
+                        <p>Identification of your biggest sales killers</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <span>✅</span>
+                        </div>
+                        <h3 class="title is-5">Q&A</h3>
+                        <p>Answers to all your questions</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <span>✅</span>
+                        </div>
+                        <h3 class="title is-5">Partnership</h3>
+                        <p>Discussion of potential partnership opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 POBB - All Rights Reserved</p>
+        <div class="footer-links">
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar burger toggle for mobile
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+
+            // Accordion functionality
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('i');
+
+                    button.classList.toggle('active');
+                    if (button.classList.contains('active')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    } else {
+                        content.style.maxHeight = 0;
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+
+        // Loader functionality
+        window.addEventListener('load', function () {
+            var loader = document.getElementById('loader');
+            loader.style.display = 'none';
+        });
+
+        // Scroll animation functionality
+        const fadeInElements = document.querySelectorAll('.fade-in');
+
+        const handleScroll = () => {
+            fadeInElements.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+
+        document.getElementById('precall-form').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+
+            // Show loading state
+            submitBtn.classList.add('is-loading');
+            submitBtn.disabled = true;
+
+            try {
+                // 1. First submit to Formspree
+                const formspreeResponse = await fetch('https://formspree.io/f/xqazyrea', {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (!formspreeResponse.ok) throw new Error('Formspree submission failed');
+
+                // 2. Then submit to your own endpoint (optional backup)
+                const backupResponse = await fetch('https://pobbagency.vercel.app/api/save-form', {
+                    method: 'POST',
+                    body: new FormData(form)
+                });
+
+                // 3. Finally redirect - THIS IS WHAT MATTERS
+                window.location.href = 'https://pobbagency.vercel.app/thank-you' + window.location.search;
+
+            } catch (error) {
+                // Fallback to WhatsApp if both submissions fail
+                window.location.href = 'https://wa.me/yourphonenumber?text=Form%20submission%20failed.%20Please%20help.';
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

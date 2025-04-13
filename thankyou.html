@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Thank you for submitting your questionnaire - POBB Agency">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | POBB Agency</title>
+    <link rel="icon" href="POBB__3_-removebg-preview (1) (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom Thank You Page Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .thank-you-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .thank-you-card {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .checkmark-icon {
+            color: #25D366;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .next-steps {
+            text-align: left;
+            margin: 2rem auto 0;
+            max-width: 500px;
+        }
+
+        .next-steps li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .next-steps li:before {
+            content: "✓";
+            color: #000000;
+            position: absolute;
+            left: 0;
+        }
+
+        .action-buttons {
+            margin-top: 3rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .thank-you-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation (Same as your main site) -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="2-removebg-preview.png" alt="POBB Logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Thank You Content -->
+    <section class="section">
+        <div class="thank-you-container">
+            <div class="thank-you-card">
+                <div class="checkmark-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1 class="title is-2 has-text-centered">Thank You!</h1>
+                <p class="subtitle is-4 has-text-centered">We've received your information and are preparing for our
+                    call.</p>
+
+                <div class="next-steps">
+                    <h3 class="title is-5 mb-4">What happens next:</h3>
+                    <ul>
+                        <li>You'll receive a calendar confirmation email</li>
+                        <li>Add the call to your calendar to reserve your spot</li>
+                        <li>We'll send a reminder 24 hours before our call</li>
+                        <li>Prepare any additional questions you may have</li>
+                    </ul>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="index.html" class="button is-light mr-3">
+                        <span class="icon">
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                        <span>Back to Home</span>
+                    </a>
+                    <a href="bookyourcall.html" class="button is-primary">
+                        <span class="icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </span>
+                        <span>View Your Booking</span>
+                    </a>
+                </div>
+
+                <div class="has-text-centered mt-5">
+                    <p class="is-size-7">
+                        <i class="fas fa-lock"></i> Your information is secure. Need help?
+                        <a href="mailto:pobbagency@outlook.com">Contact our team</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as your main site) -->
+    <footer>
+        <p>&copy; 2025 POBB - All Rights Reserved</p>
+        <div class="footer-links">
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+        // Extract booking reference if exists
+        const urlParams = new URLSearchParams(window.location.search);
+        const eventId = urlParams.get('event');
+
+        if (eventId) {
+            const bookingLink = document.getElementById('dynamic-booking-link');
+            const link = bookingLink.querySelector('a');
+            link.href = `https://calendly.com/app/scheduled_events/${eventId}/guest`;
+            bookingLink.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
