@@ -21,7 +21,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -85,12 +85,12 @@
                 </h1>
                 <p>Get 5+ Sales on Us – You Won’t Pay a Dime!</p>
                 <a href="bookyourcall.html" class="button is-primary">Get 5+ Sales, Pay $0</a>
-                
+
             </div>
         </div>
     </section>
 
-    
+
 
     <!-- about section -->
     <section class="fade-in-section" id="about">
@@ -392,7 +392,25 @@
 
         // Trigger on load to handle elements already in view
         handleScroll();
+
+
+        // Check if returning from thank-you page
+        document.addEventListener('DOMContentLoaded', () => {
+            if (sessionStorage.getItem('returningFromThankYou')) {
+                sessionStorage.removeItem('returningFromThankYou');
+                // Optional: Show a message
+                const notice = document.createElement('div');
+                notice.className = 'notification is-info is-light';
+                notice.innerHTML = `
+            <button class="delete"></button>
+            Your previous answers have been restored - you can modify them below
+        `;
+                document.querySelector('form').prepend(notice);
+                notice.querySelector('.delete').addEventListener('click', () => notice.remove());
+            }
+        });
     </script>
+
 </body>
 
 </html>

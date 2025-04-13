@@ -63,7 +63,7 @@
                     Let's Get Started With Your Free Strategy Session
                 </h1>
                 <p class="subtitle">
-                    Schedule a call with our ROAS experts to discuss how we can help you achieve 5+ sales at no cost
+                    Schedule a call with <b>Solomon</b> to discuss how we can help you achieve 5+ sales at no cost
                 </p>
             </div>
         </div>
@@ -128,7 +128,8 @@
                             <div class="field">
                                 <label class="label">What's your biggest challenge with ads right now?</label>
                                 <div class="control">
-                                    <textarea class="textarea" name="biggest_challenge" rows="2" required></textarea>
+                                    <textarea class="textarea" id="biggest_challenge" name="biggest_challenge" rows="2"
+                                        required></textarea>
                                 </div>
                             </div>
 
@@ -136,7 +137,7 @@
                             <div class="field">
                                 <label class="label">Current monthly ad spend ($USD)</label>
                                 <div class="control">
-                                    <input class="input" type="number" name="ad_spend" required>
+                                    <input class="input" type="number" id="ad_spend" required>
                                 </div>
                             </div>
 
@@ -154,7 +155,7 @@
                                 <label class="label">What's your #1 goal for this partnership?</label>
                                 <div class="control">
                                     <div class="select is-fullwidth">
-                                        <select name="primary_goal" required>
+                                        <select id="primary_goal" required>
                                             <option value="" disabled selected>Select an option</option>
                                             <option value="increase_roas">Increase ROAS</option>
                                             <option value="scale_profitably">Scale profitably</option>
@@ -171,7 +172,7 @@
                                     business?</label>
                                 <div class="control">
                                     <div class="select is-fullwidth">
-                                        <select name="monthly_revenue" required>
+                                        <select id="monthly_revenue" required>
                                             <option value="" disabled selected>Select range</option>
                                             <option value="under_500">Under $500</option>
                                             <option value="1k_5k">$1K - $5K</option>
@@ -189,7 +190,7 @@
                                     us?</label>
                                 <div class="control">
                                     <div class="select is-fullwidth">
-                                        <select name="investment_capacity" required>
+                                        <select id="investment_capacity" required>
                                             <option value="" disabled selected>Select range</option>
                                             <option value="under_500">Under $500</option>
                                             <option value="1k_5k">$1K - $5K</option>
@@ -206,11 +207,11 @@
                                 <label class="label">Will you definitely attend at your scheduled time?</label>
                                 <div class="control">
                                     <label class="radio">
-                                        <input type="radio" name="attendance_commitment" value="yes" required>
+                                        <input type="radio" id="attendance_commitment" value="yes" required>
                                         Yes, I'll be there
                                     </label>
                                     <label class="radio">
-                                        <input type="radio" name="attendance_commitment" value="no">
+                                        <input type="radio" id="attendance_commitment" value="no">
                                         No, I am not sure
                                     </label>
                                 </div>

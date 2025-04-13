@@ -125,6 +125,24 @@
         </div>
     </section>
 
+    <!-- Add this to your thank-you.html -->
+    <div class="has-text-centered mt-5">
+        <p>Need to modify your answers?</p>
+        <a href="javascript:history.go(-1);" class="button is-small is-text">
+            <span class="icon">
+                <i class="fas fa-edit"></i>
+            </span>
+            <span>Edit my responses</span>
+        </a>
+    </div>
+
+    <script>
+        // Preserve form data if returning from thank-you page
+        if (document.referrer.includes('/thank-you')) {
+            sessionStorage.setItem('returningFromThankYou', 'true');
+        }
+    </script>
+
     <!-- Footer (Same as your main site) -->
     <footer>
         <p>&copy; 2025 POBB - All Rights Reserved</p>
